@@ -1,0 +1,140 @@
+IDEAS FOR LONG ROGUE
+==============================================================
+
+PLAYER ATTRIBUTES:
+==============================================================
+Basic (should fluctuate often):
+.................................
+- HP (HP)
+- Mana or Power (Pr)
+- Armor or Shield (Sh)
+
+Advanced (should slowly rise over time,
+also good target for status attacks/boosts):
+.................................
+?- Level (Lv)
+?    - not sure what this does yet
+?- XP (Xp)
+?- Strength (St)
+?    - ease with which you wield certain weapons/ armors
+?    - increase via potions/ attacking enemies
+?    - consider just using xp/level for this (but then no 'potion of strength')
+- Stealth (Sl)
+    - how close you can get to enemies before getting noticed
+    - increase through better armor
+- Agility (Ag)
+    - how often you doge enemy attacks
+    - increase through minerals
+
+NATURAL RESOURCES:
+==============================================================
+(mainly used to replenish basic attrs)
+(effect stays same each play through)
+.................................
+- Red Mushroom (for HP)
+- Blue Mushroom (for Power)
+- Green Mushroom (for Shield)
+- [Rare] Glowing Mushrooms to perminantly raise max stat
+
+STATUS EFFECTS:
+==============================================================
+Negative
+.................................
+- Sleep (for n turns)
+- Poison (lose hp for n turns)
+- Paralysis
+    Full: cannot move for n turns
+    Semi: random chance cannot move, over course of n turns
+
+Positive
+.................................
+- Invisible (for n turns)
+- Invincible (for n turns)
+
+
+ITEM TYPES
+==============================================================
+(effect changes each play through)
+- Potions
+    - mainly for status effects
+    - drink/ drop/ throw
+- Minerals (think of something better)
+    - Used to upgrade weapons/ armor
+    - maybe also currency?
+    - good for some advanced stats
+- Journals (just xp buff for now)
+
+WEAPON TYPES
+==============================================================
+- Swords (or Melee)
+    -  can be equipped
+    -  when an enemy is tapped the equipped melee weapon is used
+- Rods or Power Rods (think of better name?)
+    - do one type of damage/ action, rather than player learning spells
+    - can also be healing instead of attacking
+    - the better the rod, the more Pw it uses
+- Darts
+
+ENEMIES
+==============================================================
+- Crabs (easy)
+-
+
+LEVELS
+==============================================================
+(whole game takes place in a cave)
+
+USEFUL NOUNS/ADJECTIVES
+==============================================================
+- Plasma
+- Glowing
+- Fire
+- Crystal
+- Emerald
+- Uranium
+- Shiny
+
+POTENTIAL GAMEPLAY CONCEPTS
+==============================================================
+- slow in water
+- once a vague item is used, it is always referenced by its proper name after
+- should have
+- tapping one cell at a time makes you more quiet than tapping far away???
+- loot bodies???
+- for now, player should be able to throw/ shoot anything any distance
+    - as long as there isnt something in the way, otherwise it will collide
+
+JOURNALS
+- There are some number of 'journals' that appear throughout the game in a specific order
+    - Eg: Journal #1 always appears somewhere in the first 5 levels, Journal #2 in the following 10, etc
+    - Journals contain info about the 'story' of the game
+    - If this is the first time a player sees Journal #n, an overlay with text appears that they can read
+        - otherwise, it just goes into inventory
+        - players can read found journals at any time, even in subsequent playthroughs where they haven't
+            found them yet (they just have to find it once)
+    - The idea is, your player is investigating an alien planet made up of caves, where one of your fellow
+        astronauts went in before, leaving all these journals behind
+    - They just give you an xp buff when collected
+
+
+
+
+BOTTOM HUD
+==============================================================
+- 3 text history
+    - tap for full history
+- Health (HP:100/100)
+    - blinks when low
+- Power (Pw:5/5)
+    - Should this be tappable to use equipped rod,
+    - or should there be a separate button for the rod?
+- Shield (Sh: 50/50)
+- Bag Button
+    - when bag is open (its an overlay), show other buttons on top of screen
+        - main menu (new game, resume, settings, about/credits)
+        - player status
+        - journals found
+- Search Button?
+    - Allows player to query the type of tile/ item/ enemy at selected point
+    - (all rogue likes do this I guess :/ )
+    - could also just do long press on tile????

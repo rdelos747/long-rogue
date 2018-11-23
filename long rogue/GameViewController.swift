@@ -11,25 +11,19 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
-
+    var gameScene: GameScene!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        let view = self.view as! SKView
+        view.ignoresSiblingOrder = true
+        gameScene = GameScene(size: view.bounds.size)
+        view.presentScene(gameScene)
+        
+        view.ignoresSiblingOrder = true
+        //view.showsFPS = true
+        //view.showsNodeCount = true
     }
 
     override var shouldAutorotate: Bool {
@@ -50,6 +44,10 @@ class GameViewController: UIViewController {
     }
 
     override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override func prefersHomeIndicatorAutoHidden() -> Bool {
         return true
     }
 }
