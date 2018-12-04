@@ -138,3 +138,4 @@ BOTTOM HUD
     - Allows player to query the type of tile/ item/ enemy at selected point
     - (all rogue likes do this I guess :/ )
     - could also just do long press on tile????
+- Tap a status (hp/pw/sh) to get a quick menu of status boosts for that spec

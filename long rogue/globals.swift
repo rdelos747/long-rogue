@@ -16,9 +16,8 @@ import SpriteKit
 let XMAX =                              18
 let YMAX =                              18
 let TILE_LABEL_SIZE:CGFloat =           20
-let HISTORY_LABEL_SIZE:CGFloat =        15
-let STATUS_LABEL_SIZE:CGFloat =         15
-let LABEL_FONT =                        "Menlo"
+
+let LABEL_FONT =                        "Fleftex Mono"
 let BTM_MARGIN:CGFloat =                150
 let TOP_MARGIN:CGFloat =                40
 
@@ -26,6 +25,16 @@ let TOP_MARGIN:CGFloat =                40
 let BK_COLOR =                          "000000"
 let F_COLOR =                           "111111"
 let HUD_COLOR =                         "000000"
+// hud
+let GRAY1 =                             "999999"
+let GRAY2 =                             "777777"
+let GRAY3 =                             "555555"
+let RED =                               "ff0000"
+let DARK_RED =                          "C1272D"
+let GREEN =                             "00ff00"
+let DARK_GREEN =                        "22B573"
+let CYAN =                              "00ffff"
+let DARK_CYAN =                         "29ABE2"
 
 // ///////////////////////////////
 // G L O B A L S
