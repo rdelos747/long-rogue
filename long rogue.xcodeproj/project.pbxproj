@@ -31,6 +31,7 @@
 		053CD7C821B630EF00F21645 /* Fleftex_M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 053CD7C721B630EF00F21645 /* Fleftex_M.ttf */; };
 		053CD7CC21B63A7400F21645 /* status_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7CB21B63A7400F21645 /* status_box.swift */; };
 		053CD7CE21B63BE400F21645 /* log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7CD21B63BE400F21645 /* log.swift */; };
+		053CD7D121B64B7600F21645 /* menu_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7D021B64B7600F21645 /* menu_box.swift */; };
 		057CA3032162FCB7007C80F9 /* objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057CA3022162FCB7007C80F9 /* objects.swift */; };
 		058DD8CD212D22E100CB10D2 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DD8CC212D22E100CB10D2 /* player.swift */; };
 		05A4AB1E2164780F009C4D28 /* top_hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4AB1D2164780F009C4D28 /* top_hud.swift */; };
@@ -84,6 +85,7 @@
 		053CD7C721B630EF00F21645 /* Fleftex_M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fleftex_M.ttf; sourceTree = "<group>"; };
 		053CD7CB21B63A7400F21645 /* status_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_box.swift; sourceTree = "<group>"; };
 		053CD7CD21B63BE400F21645 /* log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = log.swift; sourceTree = "<group>"; };
+		053CD7D021B64B7600F21645 /* menu_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_box.swift; sourceTree = "<group>"; };
 		057CA3022162FCB7007C80F9 /* objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objects.swift; sourceTree = "<group>"; };
 		058DD8CC212D22E100CB10D2 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		05A4AB1D2164780F009C4D28 /* top_hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top_hud.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				0539F3B921A77970004E9082 /* bottom_hud.swift */,
 				053CD7CB21B63A7400F21645 /* status_box.swift */,
 				053CD7CD21B63BE400F21645 /* log.swift */,
+				053CD7D021B64B7600F21645 /* menu_box.swift */,
 			);
 			path = bottom_hud;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				053CD7CC21B63A7400F21645 /* status_box.swift in Sources */,
+				053CD7D121B64B7600F21645 /* menu_box.swift in Sources */,
 				0539F3CF21A77970004E9082 /* bottom_hud.swift in Sources */,
 				0539F3C621A77970004E9082 /* enemy.swift in Sources */,
 				052034122128EFB100526EA6 /* GameScene.swift in Sources */,
