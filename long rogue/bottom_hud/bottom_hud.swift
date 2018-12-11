@@ -9,9 +9,6 @@
 import Foundation
 import SpriteKit
 
-let STATUS_LABEL_SIZE:CGFloat = 14
-let STATUS_TITLE_SIZE:CGFloat = 12
-
 class BottomHud: SKSpriteNode {
     let logBox:Log
     let hpBox:StatusBox
@@ -89,5 +86,10 @@ class BottomHud: SKSpriteNode {
         self.logBox.getText(text)
     }
     
+    func touch(_ location:CGPoint) {
+        if let parent = self.parent as? GameScene {
+            parent.openMenu()
+        }
+    }
 }
 

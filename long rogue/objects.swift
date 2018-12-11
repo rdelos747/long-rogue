@@ -24,7 +24,7 @@ let OBJECTS = [
     ],
     OBJ.player: [
         "icon": "@",
-        "color": "DACA0D"
+        "color": PLAYER_COLOR
     ],
     // ///////////////////////////
     // MUSHROOMS

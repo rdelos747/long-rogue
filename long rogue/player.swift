@@ -12,6 +12,7 @@ class Player {
     var position:(Int, Int)
     var currentPath:[(Int, Int)]
     var bag:[Item]
+    var bagSize:Int
     var weapon:Item?
     
     var level:Int
@@ -24,6 +25,7 @@ class Player {
         self.position = (j, i)
         self.currentPath = []
         self.bag = []
+        self.bagSize = 10
         self.weapon = nil
         
         self.level = 1

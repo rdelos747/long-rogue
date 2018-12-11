@@ -21,12 +21,12 @@ class StatusBox:SKSpriteNode {
     init(_ t: String, _ c1:String, _ c2:String, _ x:CGFloat, _ y:CGFloat, _ w:CGFloat, _ h:CGFloat) {
         let titleWidth:CGFloat = 40
         var outlinePoints = [
-            CGPoint(x:10, y:h),
+            CGPoint(x:5, y:h),
             CGPoint(x:0, y:h),
             CGPoint(x:0, y:0),
             CGPoint(x:w, y:0),
             CGPoint(x:w, y:h),
-            CGPoint(x:10 + titleWidth, y:h)
+            CGPoint(x:5 + titleWidth, y:h)
         ]
         
         self.outline = SKShapeNode(points: &outlinePoints, count: outlinePoints.count)
@@ -43,7 +43,7 @@ class StatusBox:SKSpriteNode {
         self.text.text = "100/100"
         
         self.title = SKLabelNode(fontNamed: LABEL_FONT)
-        self.title.position = CGPoint(x:10 + (titleWidth / 2), y:h  - (STATUS_TITLE_SIZE / 2))
+        self.title.position = CGPoint(x:5 + (titleWidth / 2), y:h  - (STATUS_TITLE_SIZE / 2))
         self.title.fontSize = STATUS_TITLE_SIZE
         self.title.fontColor = hex(c2)
         self.title.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center

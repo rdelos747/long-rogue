@@ -13,6 +13,8 @@ class GameScene: SKScene {
     var level:Level?
     var btmHd:BottomHud?
     var topHd:SKSpriteNode?
+    var menu:Menu?
+    var menuOpen:Bool?
     
     override func didMove(to view: SKView) {
         self.backgroundColor = hex(HUD_COLOR)
@@ -33,6 +35,13 @@ class GameScene: SKScene {
 //        self.addChild(self.topHd!)
         self.topHd = TopHud(0, self.size.height - TOP_MARGIN, self.size.width, TOP_MARGIN)
         self.addChild(self.topHd!)
+        
+        self.menu = Menu(self.size.width, self.size.height)
+        self.addChild(self.menu!)
+        self.menuOpen = false
+        
+        self.btmHd?.zPosition = Z_HUD
+        self.menu?.zPosition = Z_MENU
     }
     
 //    func touchDown(atPoint pos : CGPoint) {
@@ -57,7 +66,18 @@ class GameScene: SKScene {
 //
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for t in touches {
-            self.level?.touch(t.location(in: self))
+            let point = t.location(in: self)
+            if self.menuOpen! {
+                self.menu?.touch(point)
+            }
+            else {
+                if point.y < BTM_MARGIN {
+                    self.btmHd?.touch(point)
+                }
+                else {
+                    self.level?.touch(point)
+                }
+            }
         }
     }
 //
@@ -80,5 +100,14 @@ class GameScene: SKScene {
     
     func showMessage(_ text:String) {
         self.btmHd?.getText(text)
+    }
+    
+    func openMenu() {
+        self.menuOpen = true
+        self.menu?.open()
+    }
+    
+    func closeMenu() {
+        self.menuOpen = false
     }
 }

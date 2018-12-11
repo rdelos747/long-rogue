@@ -27,12 +27,12 @@ class Log:SKSpriteNode {
         let logLabelTopMargin:CGFloat = 10
         let logLabelHeight = (h - (logLabelBottomMargin + logLabelTopMargin)) / 3
         var outlinePoints = [
-            CGPoint(x:10, y:h),
+            CGPoint(x:5, y:h),
             CGPoint(x:0, y:h),
             CGPoint(x:0, y:0),
             CGPoint(x:w - 20, y:0),
             CGPoint(x:w - 20, y:h),
-            CGPoint(x:10 + titleWidth, y:h)
+            CGPoint(x:5 + titleWidth, y:h)
         ]
         
         self.outline = SKShapeNode(points: &outlinePoints, count: outlinePoints.count)
@@ -41,7 +41,7 @@ class Log:SKSpriteNode {
         self.outline.strokeColor = hex(GRAY1)
         
         self.text0 = SKLabelNode(fontNamed: LABEL_FONT)
-        self.text0.position = CGPoint(x:10, y:logLabelBottomMargin)
+        self.text0.position = CGPoint(x:5, y:logLabelBottomMargin)
         self.text0.fontSize = STATUS_TITLE_SIZE
         self.text0.fontColor = hex(GRAY1)
         self.text0.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
@@ -49,7 +49,7 @@ class Log:SKSpriteNode {
         self.text0.text = ""
         
         self.text1 = SKLabelNode(fontNamed: LABEL_FONT)
-        self.text1.position = CGPoint(x:10, y:logLabelHeight + logLabelBottomMargin)
+        self.text1.position = CGPoint(x:5, y:logLabelHeight + logLabelBottomMargin)
         self.text1.fontSize = STATUS_TITLE_SIZE
         self.text1.fontColor = hex(GRAY2)
         self.text1.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
@@ -57,7 +57,7 @@ class Log:SKSpriteNode {
         self.text1.text = ""
         
         self.text2 = SKLabelNode(fontNamed: LABEL_FONT)
-        self.text2.position = CGPoint(x:10, y:(logLabelHeight * 2) + logLabelBottomMargin)
+        self.text2.position = CGPoint(x:5, y:(logLabelHeight * 2) + logLabelBottomMargin)
         self.text2.fontSize = STATUS_TITLE_SIZE
         self.text2.fontColor = hex(GRAY3)
         self.text2.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.left
@@ -65,7 +65,7 @@ class Log:SKSpriteNode {
         self.text2.text = ""
         
         self.title = SKLabelNode(fontNamed: LABEL_FONT)
-        self.title.position = CGPoint(x:10 + (titleWidth / 2), y:h  - (STATUS_TITLE_SIZE / 2))
+        self.title.position = CGPoint(x:5 + (titleWidth / 2), y:h  - (STATUS_TITLE_SIZE / 2))
         self.title.fontSize = STATUS_TITLE_SIZE
         self.title.fontColor = hex(GRAY1)
         self.title.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.center

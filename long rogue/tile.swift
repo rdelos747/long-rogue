@@ -34,6 +34,7 @@ class Tile: SKSpriteNode {
         super.init(texture:nil, color:UIColor.clear, size:CGSize(width: w, height: h))
         self.anchorPoint = CGPoint(x:0, y:0)
         self.position = CGPoint(x:CGFloat(i) * w, y:(CGFloat(j) * h) + BTM_MARGIN)
+        self.zPosition = Z_TILE
         
         self.label.text = " "
         self.label.fontSize = TILE_LABEL_SIZE
