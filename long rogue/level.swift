@@ -115,7 +115,7 @@ class Level {
                     let currentEnemy = (self.room?.enemyLayer[j][i])!
                     currentEnemy.setPosition(j, i)
                     self.roomEnemies.append(currentEnemy)
-                    t.setObject(currentEnemy.type)
+                    t.setEnemy(currentEnemy.type)
                 }
 
                 row.append(t)
@@ -143,7 +143,7 @@ class Level {
                     let currentEnemy = (self.room?.enemyLayer[j][i])!
                     currentEnemy.setPosition(j + self.height, i)
                     self.roomEnemies.append(currentEnemy)
-                    t.setObject(currentEnemy.type)
+                    t.setEnemy(currentEnemy.type)
                 }
                 row.append(t)
                 self.scene.addChild(t)
@@ -213,7 +213,7 @@ class Level {
                     let currentEnemy = (self.room?.enemyLayer[0][i])!
                     currentEnemy.setPosition((self.height * 2) - 1, i)
                     self.roomEnemies.append(currentEnemy)
-                    row[i].setObject(currentEnemy.type)
+                    row[i].setEnemy(currentEnemy.type)
                 }
             }
             self.room?.tiles.removeFirst()
@@ -399,7 +399,7 @@ class Level {
                 if enemyNext != playerPoint {
                     enemy.acknowledgeMove(enemyNext)
                     self.tiles[enemyCurrent.0][enemyCurrent.1].unsetObject()
-                    self.tiles[enemyNext.0][enemyNext.1].setObject(enemy.type)
+                    self.tiles[enemyNext.0][enemyNext.1].setEnemy(enemy.type)
                 }
             }
             let attackPath = pathWithDiagonals(self.tiles, enemy.position, playerPoint)

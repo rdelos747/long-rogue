@@ -32,13 +32,17 @@
 		053CD7CC21B63A7400F21645 /* status_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7CB21B63A7400F21645 /* status_box.swift */; };
 		053CD7CE21B63BE400F21645 /* log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7CD21B63BE400F21645 /* log.swift */; };
 		053CD7D121B64B7600F21645 /* menu_box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD7D021B64B7600F21645 /* menu_box.swift */; };
-		057CA3032162FCB7007C80F9 /* objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057CA3022162FCB7007C80F9 /* objects.swift */; };
+		057CA3032162FCB7007C80F9 /* _objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057CA3022162FCB7007C80F9 /* _objects.swift */; };
 		058DD8CD212D22E100CB10D2 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058DD8CC212D22E100CB10D2 /* player.swift */; };
 		05943D0A21BE149C001D09AF /* menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05943D0921BE149C001D09AF /* menu.swift */; };
 		05943D0D21BF48D7001D09AF /* menu_title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05943D0C21BF48D7001D09AF /* menu_title.swift */; };
 		05943D0F21BF4D90001D09AF /* player_status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05943D0E21BF4D90001D09AF /* player_status.swift */; };
 		05943D1321BF5F2F001D09AF /* bag_title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05943D1221BF5F2F001D09AF /* bag_title.swift */; };
 		05943D1521BF62F0001D09AF /* bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05943D1421BF62F0001D09AF /* bag.swift */; };
+		059F8AE9227BDCE700DE925D /* potion_objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F8AE8227BDCE700DE925D /* potion_objects.swift */; };
+		059F8AEB227BDCF600DE925D /* weapon_objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F8AEA227BDCF600DE925D /* weapon_objects.swift */; };
+		059F8AED227BDD3800DE925D /* mushroom_objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F8AEC227BDD3800DE925D /* mushroom_objects.swift */; };
+		059F8AEF227BDD7100DE925D /* _enemys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F8AEE227BDD7100DE925D /* _enemys.swift */; };
 		05A4AB1E2164780F009C4D28 /* top_hud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4AB1D2164780F009C4D28 /* top_hud.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,13 +95,17 @@
 		053CD7CB21B63A7400F21645 /* status_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = status_box.swift; sourceTree = "<group>"; };
 		053CD7CD21B63BE400F21645 /* log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = log.swift; sourceTree = "<group>"; };
 		053CD7D021B64B7600F21645 /* menu_box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_box.swift; sourceTree = "<group>"; };
-		057CA3022162FCB7007C80F9 /* objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objects.swift; sourceTree = "<group>"; };
+		057CA3022162FCB7007C80F9 /* _objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _objects.swift; sourceTree = "<group>"; };
 		058DD8CC212D22E100CB10D2 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		05943D0921BE149C001D09AF /* menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
 		05943D0C21BF48D7001D09AF /* menu_title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_title.swift; sourceTree = "<group>"; };
 		05943D0E21BF4D90001D09AF /* player_status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player_status.swift; sourceTree = "<group>"; };
 		05943D1221BF5F2F001D09AF /* bag_title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bag_title.swift; sourceTree = "<group>"; };
 		05943D1421BF62F0001D09AF /* bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bag.swift; sourceTree = "<group>"; };
+		059F8AE8227BDCE700DE925D /* potion_objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potion_objects.swift; sourceTree = "<group>"; };
+		059F8AEA227BDCF600DE925D /* weapon_objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weapon_objects.swift; sourceTree = "<group>"; };
+		059F8AEC227BDD3800DE925D /* mushroom_objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mushroom_objects.swift; sourceTree = "<group>"; };
+		059F8AEE227BDD7100DE925D /* _enemys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _enemys.swift; sourceTree = "<group>"; };
 		05A4AB1D2164780F009C4D28 /* top_hud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top_hud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +171,7 @@
 				053CD7CA21B63A5D00F21645 /* bottom_hud */,
 				05943D0B21BE14B5001D09AF /* menu */,
 				0539F3B021A7796B004E9082 /* enemy.swift */,
+				059F8AF0227BE6D800DE925D /* modals */,
 				0539F3A821A77967004E9082 /* cell_auto.swift */,
 				0539F3B521A7796D004E9082 /* item.swift */,
 				0539F3AE21A7796A004E9082 /* level.swift */,
@@ -172,7 +181,7 @@
 				05A4AB1D2164780F009C4D28 /* top_hud.swift */,
 				052034472128F4F000526EA6 /* room.swift */,
 				058DD8CC212D22E100CB10D2 /* player.swift */,
-				057CA3022162FCB7007C80F9 /* objects.swift */,
+				059F8AE7227BDC7E00DE925D /* objects */,
 				0539F3D021A779FD004E9082 /* Info.plist */,
 			);
 			path = "long rogue";
@@ -225,6 +234,25 @@
 				05943D1421BF62F0001D09AF /* bag.swift */,
 			);
 			path = menu;
+			sourceTree = "<group>";
+		};
+		059F8AE7227BDC7E00DE925D /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				059F8AEE227BDD7100DE925D /* _enemys.swift */,
+				057CA3022162FCB7007C80F9 /* _objects.swift */,
+				059F8AE8227BDCE700DE925D /* potion_objects.swift */,
+				059F8AEA227BDCF600DE925D /* weapon_objects.swift */,
+				059F8AEC227BDD3800DE925D /* mushroom_objects.swift */,
+			);
+			path = objects;
+			sourceTree = "<group>";
+		};
+		059F8AF0227BE6D800DE925D /* modals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,8 +394,10 @@
 				053CD7D121B64B7600F21645 /* menu_box.swift in Sources */,
 				0539F3CF21A77970004E9082 /* bottom_hud.swift in Sources */,
 				0539F3C621A77970004E9082 /* enemy.swift in Sources */,
+				059F8AEF227BDD7100DE925D /* _enemys.swift in Sources */,
 				05943D0F21BF4D90001D09AF /* player_status.swift in Sources */,
 				052034122128EFB100526EA6 /* GameScene.swift in Sources */,
+				059F8AEB227BDCF600DE925D /* weapon_objects.swift in Sources */,
 				053CD7CE21B63BE400F21645 /* log.swift in Sources */,
 				052034482128F4F000526EA6 /* room.swift in Sources */,
 				05A4AB1E2164780F009C4D28 /* top_hud.swift in Sources */,
@@ -375,13 +405,15 @@
 				058DD8CD212D22E100CB10D2 /* player.swift in Sources */,
 				05943D0A21BE149C001D09AF /* menu.swift in Sources */,
 				0539F3C121A77970004E9082 /* types.swift in Sources */,
-				057CA3032162FCB7007C80F9 /* objects.swift in Sources */,
+				057CA3032162FCB7007C80F9 /* _objects.swift in Sources */,
 				0539F3BE21A77970004E9082 /* cell_auto.swift in Sources */,
 				0520340C2128EFB100526EA6 /* AppDelegate.swift in Sources */,
 				0539F3CB21A77970004E9082 /* item.swift in Sources */,
+				059F8AE9227BDCE700DE925D /* potion_objects.swift in Sources */,
 				05943D1521BF62F0001D09AF /* bag.swift in Sources */,
 				0539F3D521A77EF2004E9082 /* globals.swift in Sources */,
 				05943D0D21BF48D7001D09AF /* menu_title.swift in Sources */,
+				059F8AED227BDD3800DE925D /* mushroom_objects.swift in Sources */,
 				0539F3BD21A77970004E9082 /* path.swift in Sources */,
 				05943D1321BF5F2F001D09AF /* bag_title.swift in Sources */,
 				0539F3BA21A77970004E9082 /* tile.swift in Sources */,

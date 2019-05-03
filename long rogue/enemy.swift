@@ -10,7 +10,7 @@ import Foundation
 
 class Enemy {
     var name:String
-    var type:OBJ
+    var type:EMY
     var position:(Int, Int)
     var currentPath:[(Int, Int)]
     
@@ -21,18 +21,18 @@ class Enemy {
     var accuracy:Int
     var hitPower:Int
     
-    init(_ newName:String, _ newType:OBJ) {
+    init(_ newName:String, _ newType:EMY) {
         self.name = newName
         self.type = newType
         self.position = (0, 0)
         self.currentPath = []
         
         self.level = 1
-        self.maxHealth = OBJECTS[self.type]?["maxHealth"] as! Int
+        self.maxHealth = ENEMIES[self.type]?["maxHealth"] as! Int
         self.health = self.maxHealth
-        self.speed = OBJECTS[self.type]?["speed"] as! Int
-        self.accuracy = OBJECTS[self.type]?["accuracy"] as! Int
-        self.hitPower = OBJECTS[self.type]?["hitPower"] as! Int
+        self.speed = ENEMIES[self.type]?["speed"] as! Int
+        self.accuracy = ENEMIES[self.type]?["accuracy"] as! Int
+        self.hitPower = ENEMIES[self.type]?["hitPower"] as! Int
         
     }
     

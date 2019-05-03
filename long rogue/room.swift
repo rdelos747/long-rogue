@@ -150,6 +150,7 @@ class Room {
         self.addGrass()
         self.addMushrooms()
         self.addEnemies()
+        self.addWeapons()
     }
     
     func createForest() {
@@ -497,8 +498,22 @@ class Room {
             let randY = rand(0, self.height - 1)
             
             if self.tiles[randY][randX] == CODES.floor {
-                let enemy = Enemy("test enemy", OBJ.enemy0)
+                let enemy = Enemy("test enemy", EMY.enemy0)
                 self.enemyLayer[randY][randX] = enemy
+                search = false
+            }
+        }
+    }
+    
+    func addWeapons() {
+        var search = true
+        while search {
+            let randX = rand(0, self.width - 1)
+            let randY = rand(0, self.height - 1)
+            
+            if self.tiles[randY][randX] == CODES.floor {
+                let item = Item("test sword", OBJ.sword)
+                self.itemLayer[randY][randX] = item
                 search = false
             }
         }

@@ -80,6 +80,11 @@ class Tile: SKSpriteNode {
         self.label.fontColor = hex((OBJECTS[object]?["color"])! as! String)
     }
     
+    func setEnemy(_ enemy:EMY) {
+        self.label.text = ENEMIES[enemy]?["icon"] as! String
+        self.label.fontColor = hex((ENEMIES[enemy]?["color"])! as! String)
+    }
+    
     func unsetObject() {
         self.label.text = TYPES[self.type]?["icon"] as? String
         self.label.fontColor = hex(labelSaveColor)

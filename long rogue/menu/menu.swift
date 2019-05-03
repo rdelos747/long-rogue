@@ -65,7 +65,11 @@ class Menu:SKSpriteNode {
         }
     }
     
-    func open() {
+    func open(_ player: Player) {
         self.isHidden = false
+        
+        //update everything
+        self.status.getPlayerStatus(player.health, player.accuracy)
+        self.bag.getPlayerBag(player.bag, player.bagSize)
     }
 }

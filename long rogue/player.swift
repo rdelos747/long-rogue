@@ -25,7 +25,7 @@ class Player {
         self.position = (j, i)
         self.currentPath = []
         self.bag = []
-        self.bagSize = 10
+        self.bagSize = STARTING_BAG_SIZE
         self.weapon = nil
         
         self.level = 1
@@ -110,6 +110,9 @@ class Player {
             return "consumed"
         } else {
             // add to bag
+            if self.bag.count < self.bagSize {
+                self.bag.append(item)
+            }
             return "added"
         }
     }

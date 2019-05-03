@@ -17,6 +17,10 @@ class GameScene: SKScene {
     var menuOpen:Bool?
     
     override func didMove(to view: SKView) {
+        // I hate swift
+        combineObjects()
+        // :)
+        
         self.backgroundColor = hex(HUD_COLOR)
         self.level = Level(self)
         //self.btmHd = SKSpriteNode(texture:nil, color:UIColor.clear, size:CGSize(width: w, height: h))
@@ -104,7 +108,7 @@ class GameScene: SKScene {
     
     func openMenu() {
         self.menuOpen = true
-        self.menu?.open()
+        self.menu?.open(self.level!.player)
     }
     
     func closeMenu() {

@@ -10,27 +10,47 @@ import Foundation
 import SpriteKit
 
 class Bag:SKNode {
-    let item:BagLabel
-    let item2:BagLabel
-    let item3:BagLabel
+    var items:[BagLabel]
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     init(_ x:CGFloat, _ y:CGFloat) {
-        self.item = BagLabel(0, 0)
-        self.item2 = BagLabel(0, -30)
-        self.item3 = BagLabel(0, -60)
+        //self.item = BagLabel(0, 0)
+        //self.item2 = BagLabel(0, -30)
+        //self.item3 = BagLabel(0, -60)
+        
+        self.items = []
         
         super.init()
         self.position = CGPoint(x:x, y:y)
         
-        self.addChild(item)
-        self.addChild(item2)
-        self.addChild(item3)
-        self.item2.updateVal()
-        self.item3.updateVal2()
+        //self.getPlayerBag([], STARTING_BAG_SIZE)
+        
+        //self.addChild(item)
+        //self.addChild(item2)
+        //self.addChild(item3)
+        //self.item2.updateVal()
+        //self.item3.updateVal2()
+        
+        for i in 0..<STARTING_BAG_SIZE {
+            let b = BagLabel(0, CGFloat(i * -30))
+            self.items.append(b)
+            self.addChild(b)
+        }
+    }
+    
+    func getPlayerBag(_ bag: [Item], _ bagSize: Int) {
+        // need to figure out what to do when bagSize > STARTING_BAG_SIZE
+        for i in 0..<bagSize {
+            if i < bag.count {
+                self.items[i].updateVal(bag[i])
+            }
+            else {
+                self.items[i].getEmptyVal()
+            }
+        }
     }
 }
 
@@ -72,15 +92,15 @@ class BagLabel:SKNode {
         self.getEmptyVal()
     }
     
-    func updateVal(/*_ item:Item */) {
+    func updateVal(_ item:Item) {
         //do the text updates based on Item attributes
         //then
-        self.icon.text = "/"
-        self.icon.color = hex("ff0000")
-        self.title.text = "item name"
-        self.title.color = hex(WHITE)
-        self.lvl.text = "<lvl 3>"
-        self.lvl.color = hex(GRAY2)
+        self.icon.text = OBJECTS[item.type]?["icon"] as? String
+        self.icon.fontColor = hex(OBJECTS[item.type]?["color"] as! String)
+        self.title.text = item.name
+        self.title.fontColor = hex(WHITE)
+        self.lvl.text = item.level > 0 ? "<lvl " + String(item.level) + ">" : ""
+        self.lvl.fontColor = hex(GRAY2)
         
         self.setWidth()
     }

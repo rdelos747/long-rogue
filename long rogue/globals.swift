@@ -47,6 +47,8 @@ let PURPLE =                            "FF00FF"
 let ORANGE =                            "F7931E"
 // objects
 let PLAYER_COLOR =                      "DACA0D"
+// player stuff
+let STARTING_BAG_SIZE =                 10
 
 // ///////////////////////////////
 // G L O B A L S

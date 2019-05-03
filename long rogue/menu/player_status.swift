@@ -34,11 +34,11 @@ class PlayerStatus:SKNode {
         self.player.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
         self.player.text = "@"
         
-        self.hp = StatusLabel(0 - padding, leftSpacing, "right", RED, "100")
-        self.sh = StatusLabel(0 - padding, 0, "right", GREEN, "100")
-        self.pw = StatusLabel(0 - padding, 0 - leftSpacing, "right", CYAN, "100")
-        self.sl = StatusLabel(padding, rightSpacing, "left", PURPLE, "099")
-        self.ag = StatusLabel(padding, 0 - rightSpacing, "left", ORANGE, "099")
+        self.hp = StatusLabel("hp", 0 - padding, leftSpacing, "right", RED, "100")
+        self.sh = StatusLabel("sh", 0 - padding, 0, "right", GREEN, "100")
+        self.pw = StatusLabel("pw", 0 - padding, 0 - leftSpacing, "right", CYAN, "100")
+        self.sl = StatusLabel("sl", padding, rightSpacing, "left", PURPLE, "099")
+        self.ag = StatusLabel("ag", padding, 0 - rightSpacing, "left", ORANGE, "099")
         
         self.hp.updateVal(10)
         self.sh.updateVal(10)
@@ -55,6 +55,10 @@ class PlayerStatus:SKNode {
         self.addChild(self.sl)
         self.addChild(self.ag)
     }
+    
+    func getPlayerStatus(_ hp:Int,  _ ac:Int) {
+        self.hp.updateVal(hp)
+    }
 }
 
 class StatusLabel:SKNode {
@@ -67,7 +71,7 @@ class StatusLabel:SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(_ x:CGFloat, _ y: CGFloat, _ align:String, _ typeColor:String, _ maxValue:String) {
+    init(_ name:String, _ x:CGFloat, _ y: CGFloat, _ align:String, _ typeColor:String, _ maxValue:String) {
         let padding:CGFloat = 5
         self.value = SKLabelNode(fontNamed: LABEL_FONT)
         self.value.fontSize = STATUS_LABEL_SIZE
@@ -80,7 +84,7 @@ class StatusLabel:SKNode {
         self.type.verticalAlignmentMode = SKLabelVerticalAlignmentMode.center
         
         self.value.text = "000/000:"
-        self.type.text = "hp"
+        self.type.text = name
         self.align = align
         self.maxValue = maxValue
         if align == "right" {
